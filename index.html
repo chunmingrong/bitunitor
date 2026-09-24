@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- -->
+  <head>
+    <!-- Theme Made By www.w3schools.com -->
+    <title>bitUnitor AS</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./images/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+<link rel="manifest" href="./images/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="./images/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <link
+      rel="stylesheet"
+      href="./css/index.css?version=2"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
+<!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+<!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+
+
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand"   href="#myPage"><span><img style="height: 43px; margin-top: -15px;" src="./images/ms-icon-70x70.png" alt=""></span><span class="nav-text">bitUnitor</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about" >ABOUT</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#awards">AWARDS</a></li>
+            <li><a href="#team">TEAM</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+      <h1 class="centered">Get control of your data</h1>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div id="about" class="container-fluid">
+      <div class="container text-center">
+        <h2 class="text-muted text-transform-none">
+          Protect your digital privacy
+        </h2>
+
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe
+            class="embed-responsive-item"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY"
+          ></iframe>
+          <video class="embed-responsive-item" controls>
+            <source src="./videos/Bityoga HD 2-full.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div>&nbsp;</div>
+        <p>
+          Get all the benefits of the data economy with the control you need to
+          protect your privacy.
+        </p>
+
+        <div>&nbsp;</div>
+        <p>
+          Your data is valuable, but so is your privacy.the data-driven world,
+          we often don’t know who is using our data and why. Businesses need
+          customer data to provide the service we expect and thrive in a
+          competitive market. We want to digitally share things with family,
+          friends and organizations we trust. But our privacy keeps being
+          compromised time-after-time.
+        </p>
+        <div>&nbsp;</div>
+        <p>
+          <!-- bitUnitor is a revolutionary blockchain platform which allows you to
+          securely share your data with anyone, and keep complete control over
+          it. You control when, how and with whom your data is shared, all
+          managed via our intuitive app-->
+          bitUnitor has world leading expertise in developing innovative blockchain solutions that empower users to securely share their data when, how, and with whom they choose through our intuitive app interface.
+        </p>
+        <div>&nbsp;</div>
+        <div>&nbsp;</div>
+
+        <div class="row slideanim">
+          <div class="col-sm-3">
+            <span class="glyphicon logo-small">
+              <img class="img-fluid" src="./images/Flexibility.png" alt="" />
+            </span>
+            <h4>FLEXIBILITY</h4>
+            <p>
+              Share your data with businesses and individuals in a way that
+              works for you and your preferences - manageable anytime, anywhere.
+            </p>
+          </div>
+          <div class="col-sm-3">
+            <span class="glyphicon logo-small">
+              <img class="img-fluid" src="./images/control.png" alt="" />
+            </span>
+            <h4>CONTROL</h4>
+            <p>
+              Control exactly how your data is shared - lock down how and when
+              it can be accessed and who can access it. You can also redact or
+              remove historic data at any time.
+            </p>
+          </div>
+          <div class="col-sm-3">
+            <span class="glyphicon logo-small">
+              <img class="img-fluid" src="./images/privacy.png" alt="" />
+            </span>
+            <h4>PRIVACY</h4>
+            <p>
+              Your data is encrypted end-to-end and remains completely anonymous
+              while the processing is verified by trusted organisations.
+            </p>
+          </div>
+          <div class="col-sm-3">
+            <span class="glyphicon logo-small">
+              <img class="img-fluid" src="./images/visibility.png" alt="" />
+            </span>
+            <h4>VISIBILITY</h4>
+            <p>
+              You have complete visibility over which organisations have access
+              to your data, when they have accessed it and how they have used
+              it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Container (News Section) -->
+<div id="news" class="container-fluid">
+  <div class="container text-center">
+    <h2>Latest News</h2>
+  </div>
+
+
+  <div class="row slideanim news-tiny-carousel">
+    <div class="col-sm-4 col-xs-12 ">
+      <div class="panel panel-default text-center project-panel">
+        <div class="panel-heading">
+          <h3>bitUnitor colloborates with UIS, SUS and Lærdal Medical for the NewbornTime Project</h3>
+        </div>
+        <div class="panel-body">
+          <p class="project-description">Published at nrk.no/rogaland on 11 August,2021, 15:05 </p>
+          <p><img src="https://gfx.nrk.no/CvUieh4WlfuNOjCH3HLRQA9Zz4Qut42-TxNV6nYCaDxg.jpg" class="img-responsive project-panel-img" alt="" /></p>
+          <p class="project-description">
+            Cameras and artificial intelligence can save lives in the delivery room. The research project started in April, and will last for three and a half years. UiS is leading the project, in collaboration with SUS, Lærdal Medical and bitUnitor.</p>
+        </div>
+        <div class="panel-footer">
+          <a href="https://www.nrk.no/rogaland/ny-forskning-ved-stavanger-universitetssjukehus-kan-redde-livet-til-flere-nyfodte-med-pustevansker-1.15605135" class="btn btn-lg">Read More</a>
+        
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="col-sm-4 col-xs-12 ">
+      <div class="panel panel-default text-center project-panel">
+        <div class="panel-heading">
+          <h3>bitUnitor published a blog on simplifying smart contract development in blockchain for the Articonf project</h3>
+        </div>
+        <div class="panel-body">
+          <p class="project-description">Published at articonf.eu on 7 July,2021</p>
+          <p><img src="https://articonf.eu/wp-content/uploads/2021/07/2021-5-BY-Simplifying-Smart-Contracts.png" class="img-responsive project-panel-img" alt="" /></p>
+          <p class="project-description">
+            Speed up your blockchain smart contract development.
+            TIC Blockchain as a Service (BaaS) - Simplifying Smart Contract Development in Blockchain 
+            </p>
+        </div>
+        <div class="panel-footer">
+          <a href="https://articonf.eu/simplify-smart-contracts-with-tic/" class="btn btn-lg">Read More</a>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center project-panel">
+        <div class="panel-heading">
+          <h3>Chunming Rong from bitUnitor delivers a TED talk on "The network is my computer" at TEDxYouth@Breiavatnet, Stavanger, Norway</h3>
+        </div>
+        <div class="panel-body">
+          <p class="project-description">Published at youtube.com on 22 June,2021</p>
+          <p><iframe width="560" height="315" src="https://www.youtube.com/embed/yHLX_Oyj-8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+          <p class="project-description">
+            The world is rapidly developing technologically, which poses questions about data security. 
+            How can we ensure that our personal data stays safe, and why is it important?  
+            Chunming Rong speaks at  TEDxYouth@Breiavatnet, Stavanger, Norway 
+            </p>
+        </div>
+        <div class="panel-footer">
+          <a href="https://www.ted.com/tedx/events/39603" class="btn btn-lg">Read More</a>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center project-panel">
+        <div class="panel-heading">
+          <h3>bitUnitor presented its first version of the TIC Blockchain as a Service (BaaS) product at the ARTIFONF project's second review</h3>
+        </div>
+        <div class="panel-body">
+          <p class="project-description">Published at youtube.com on 23 April,2021</p>
+          <p><iframe width="560" height="315" src="https://www.youtube.com/embed/OXVfhP0ZIT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+          <p class="project-description">
+            bitUnitor presented its first version of the TIC Blockchain as a Service (BaaS) product at the ARTIFONF project's second review.
+            The toolkit aims to simplify the configuration, creation and maintenance of custom blockchain networks by providing a cloud-agnostic Blockchain as a Service (BaaS) toolkit offering permissioned blockchain services for agile decentralised social media platforms.
+            </p>
+        </div>
+        <div class="panel-footer">
+          <a href="https://articonf.eu/tic-tool/" class="btn btn-lg">Read More</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center project-panel">
+        <div class="panel-heading">
+          <h3>bitUnitor presented its first version of blockchain based Energy Marketplace product "Renew Ledger" at the ARTIFONF project's second review</h3>
+        </div>
+        <div class="panel-body">
+          <p class="project-description">Published at youtube.com on 23 April,2021</p>
+          <p><iframe width="560" height="315" src="https://www.youtube.com/embed/ZxB3bkBg1J4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+          <p class="project-description">
+            Trading and storage of renewable energy offers a way for the prosumer to extract value from the surplus energy that they produce.
+            We present RenewLedger, a blockchain-based DApp for renewable energy transaction, storage management and direct-to-consumer demand response incentivization and gamification for peak shaving.
+            </p>
+        </div>
+        <div class="panel-footer">
+          <a href="https://articonf.eu/renew-ledger-energy-market-place/" class="btn btn-lg">Read More</a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center project-panel">
+        <div class="panel-heading">
+          <h3>bitUnitor published a blog on Blockchain for social media for the Articonf project</h3>
+        </div>
+        <div class="panel-body">
+          <p class="project-description">Published at articonf.eu on 18 November,2020</p>
+          <p><img src="https://articonf.eu/wp-content/uploads/2020/10/header_dark.jpg" class="img-responsive project-panel-img" alt="" /></p>
+          <p class="project-description">
+            The Trust and Integration Controller(TIC) is a BaaS platform that provides secure, resilient, and permissioned blockchain services over heterogeneous cloud environments.
+            TIC improves the current BaaS platforms, providing an easier development environment for common developers. 
+            </p>
+        </div>
+        <div class="panel-footer">
+          <a href="https://articonf.eu/blockchain-for-social-media/" class="btn btn-lg">Read More</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center project-panel">
+        <div class="panel-heading">
+          <h3>bitUnitor participates in the ETSI Permissioned Distributed Ledger (PDL) industry speficiation group</h3>
+        </div>
+        <div class="panel-body">
+          <p class="project-description">Event Published at etsi.org on 20 September,2020</p>
+          <p><img src="https://www.etsi.org/templates/etsi/img/logo.svg" class="img-responsive project-panel-img" alt="" /></p>
+          <p class="project-description">
+            Foundations for the operation of permissioned distributed ledgers, with the ultimate purpose of creating an open ecosystem of industrial solutions to be deployed by different sectors, fostering the application of these technologies, and therefore contributing to consolidate the trust and dependability on information technologies supported by global, open telecommunications networks.
+            </p>
+        </div>
+        <div class="panel-footer">
+          <a href="https://www.etsi.org/committee/1467-pdl" class="btn btn-lg">Read More</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center project-panel">
+        <div class="panel-heading">
+          <h3>bitUnitor presented a paper on its Blockchain-as-a-Service (BaaS) toolkit at the IEEE workshop on blockchain theory and applications </h3>
+        </div>
+        <div class="panel-body">
+          <p class="project-description">Published at youtube.com on 7 July,2020</p>
+          <p><iframe width="560" height="315" src="https://www.youtube.com/embed/o-Uo1qaDjlo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+          <p class="project-description">
+            Presented paper on decentralised car sharing applications at workshop on blockchain theory and applications, IEEE workshop on blockchain theory and applications (BRAIN 2020) in conjunction with ISCC 2020 
+          </p>
+        </div>
+        <div class="panel-footer">
+          <a href="https://sites.google.com/view/brain-2020/" class="btn btn-lg">Read More</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center project-panel">
+        <div class="panel-heading">
+          <h3>bitUnitor presented its initial version (MVP) of TIC Blockchain as a Service (BaaS) product at the ARTIFONF project's first review</h3>
+        </div>
+        <div class="panel-body">
+          <p class="project-description">Published at youtube.com on 29 April,2020</p>
+          <p><iframe width="560" height="315" src="https://www.youtube.com/embed/MCHmaWV_ov4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+          <p class="project-description">
+            bitUnitor presented its initial version (MVP) of the TIC Blockchain as a Service (BaaS) product at the ARTIFONF project's first review.
+            The toolkit aims to simplify the configuration, creation and maintenance of custom blockchain networks by providing a cloud-agnostic Blockchain as a Service (BaaS) toolkit offering permissioned blockchain services for agile decentralised social media platforms.
+            </p>
+        </div>
+        <div class="panel-footer">
+          <a href="https://articonf.eu/tic-tool/" class="btn btn-lg">Read More</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center project-panel">
+        <div class="panel-heading">
+          <h3>bitUnitor presented its initial version (MVP) of blockchain based Energy Marketplace product "Renew Ledger" at the ARTIFONF project's first review</h3>
+        </div>
+        <div class="panel-body">
+          <p class="project-description">Published at youtube.com on 18 February,2020</p>
+          <p><iframe width="560" height="315" src="https://www.youtube.com/embed/Bsc4ZeUnTPw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+          <p class="project-description">
+            Trading and storage of renewable energy offers a way for the prosumer to extract value from the surplus energy that they produce.
+            We present RenewLedger, a blockchain-based DApp for renewable energy transaction, storage management and direct-to-consumer demand response incentivization and gamification for peak shaving.
+            </p>
+        </div>
+        <div class="panel-footer">
+          <a href="https://articonf.eu/renew-ledger-energy-market-place/" class="btn btn-lg">Read More</a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+
+
+
+
+
+  
+    
+  </div>
+
+
+
+
+   
+    
+    <!-- Container (projects Section) -->
+    <div id="projects" class="container-fluid">
+      <div class="text-center">
+        <h2>Our Projects</h2>
+      </div>
+      <div class="row slideanim project-tiny-carousel">
+        <div class="col-sm-4 col-xs-12 ">
+          <div class="panel panel-default text-center project-panel">
+            <div class="panel-heading">
+              <h3><strong>NewbornTime</strong></h3>
+            </div>
+            <div class="panel-body">
+              <p><img src="./images/newborntime.jpg" class="img-responsive project-panel-img" alt="" /></p>
+              <p class="project-description">NewbornTime – Improved newborn care based on video and artificial intelligence. NewbornTime will develop a GDPR compliant and secure digital patient consent handling system and cloud-based storage for sensitive data.</p>
+            </div>
+            <div class="panel-footer">
+              <a href="https://www.uis.no/en/research/newborntime" class="btn btn-lg">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12 ">
+          <div class="panel panel-default text-center project-panel">
+            <div class="panel-heading">
+              <h1>Articonf</h1>
+            </div>
+            <div class="panel-body">
+              <p><img src="./images/Articonf_Logo.png" class="img-responsive project-panel-img" alt="" /></p>
+              <p class="project-description">ARTICONF addresses issues of trust, time-criticality and democratisation for a new generation of federated infrastructure, to fulfil the privacy, robustness, and autonomy related promises that proprietary social media platforms have failed to deliver so far.</p>
+            </div>
+            <div class="panel-footer">
+              <a href="https://articonf.eu/" class="btn btn-lg">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+          <div class="panel panel-default text-center project-panel">
+            <div class="panel-heading">
+              <h1>Clarify</h1>
+            </div>
+            <div class="panel-body">
+              <p><img  src="./images/Clarify-logo.png" class="img-responsive project-panel-img" alt="" /></p>
+              <p class="project-description">CLARIFY is an innovative, multinational, multi-sectorial, and multidisciplinary research and training programme that links two highly differentiated specialities: engineering and medicine, to produce 12 Early Stage Researchers (ESRs) in artificial intelligence (AI), cloud computing and clinical pathology with the focus on digital pathology.</p>
+            </div>
+            <div class="panel-footer">
+              
+              <a href="http://www.clarify-project.eu/" class="btn btn-lg">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+          <div class="panel panel-default text-center project-panel">
+            <div class="panel-heading">
+              <h1>TradeRES</h1>
+            </div>
+            <div class="panel-body">
+              <p><img src="./images/TradeRES-59.svg" class="img-responsive project-panel-img" alt="" /></p>
+              <p class="project-description">The objective of this project is to develop and test an innovative electricity market design that can meet society’s needs in a near 100% renewable power system. At bitUnitor, we're contributing to the TradeRES project, which aims to develop and test new electricity market designs suitable for a near-100% renewable power system. Our role involves sharing our knowledge on blockchain-based solutions for trading in local energy systems. We're also leading Work Package 6, focusing on engaging stakeholders with the project's open-access tools. Additionally, we coordinate Task 5.2, where we assess the performance of current and new market designs and trading mechanisms for local energy communities in Case Study A. This project has received funding from the European Union’s Horizon 2020 research and innovation program under grant agreement 864276.</p>
+            </div>
+            <div class="panel-footer">
+              <a href="https://traderes.eu/" class="btn btn-lg">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- Container (awards Section) -->
+<div id="awards" class="container-fluid text-center bg-grey">
+  <div class="container text-center">
+    <h2 class="text-muted text-transform-none">
+        Awards
+      </h2>
+    </br>
+</br>
+    <div class="row slideanim">
+        <div class="col-sm-4">
+          <span class="glyphicon logo-small">
+            <img class="img-responsive  award-images" src="./images/eu.png" alt="" />
+          </span>
+          
+          <p>
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon logo-small">
+            <img class="img-responsive  award-images" src="./images/blockchain-awards.png" alt="" />
+          </span>
+          
+          <p>
+          </p>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon logo-small">
+              <img class="img-responsive  award-images" src="./images/eu2.png" alt="" />
+            </span>
+            <p>
+            </p>
+          </div>
+        
+
+
+
+
+      </div>
+    </br>
+</br>
+</div>
+</div>
+
+
+
+
+
+
+     <!-- Container (team Section) -->
+     <div id="team" class="container-fluid text-center">
+        <div class="container text-center">
+            <h2 class="text-muted text-transform-none">
+                Meet our Team
+              </h2>
+            </br>
+        </br>
+            <div class="row slideanim">
+                <div class="col-sm-4">
+                  <span class="glyphicon logo-small">
+                    <img class="img-responsive img-circle team-images" src="./images/chunming-1.png" alt="" />
+                  </span>
+                  <h4 class="text-muted text-transform-none">Chunming Rong<br>CEO</h4>
+                  <p>
+                  </p>
+                </div>
+                
+                  <div class="col-sm-4">
+                    <span class="glyphicon logo-small">
+                      <img class="img-responsive img-circle team-images" src="./images/ozgur.jpg" alt="" />
+                    </span>
+                    <h4 class="text-muted text-transform-none">Ozgur Catak<br>CTO</h4>
+                    <p>
+                    </p>
+                  </div>
+
+                  <div class="col-sm-4">
+                    <span class="glyphicon logo-small">
+                      <img class="img-responsive img-circle team-images" src="./images/Russel-2.png" alt="" />
+                    </span>
+                    <h4 class="text-muted text-transform-none">Russel Gene Wolff<br>COO</h4>
+                    <p>
+                    </p>
+                  </div>
+
+                  <div class="col-sm-4">
+                    <span class="glyphicon logo-small">
+                      <img class="img-responsive img-circle team-images" src="./images/helleik_line_syse.jpeg" alt="" />
+                    </span>
+                    <h4 class="text-muted text-transform-none">Helleik Rosenvinge Syse<br>Chief Scientist on Substanbility</h4>
+                    <p>
+                    </p>
+                  </div>
+              </div>
+            </br>
+        </br>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container-fluid bg-grey">
+      <!-- <h2 class="text-center">CONTACT</h2> -->
+      <div class="row">
+        
+        <div class="col-sm-6 text-center slideanim">
+            
+            <h2 class="text-center text-muted text-transform-none"><span class="glyphicon glyphicon-map-marker"></span> LOCATION</h2>
+          <div id="mapid"></div>
+        </br>
+          <p>bitUnitor</p>
+          <p>Fomo Works</p>
+          <p>B3 (Block-B,3rd Floor)</p>
+          <p>
+            <span class="glyphicon glyphicon-map-marker"></span> P.O. Box 6028 Hinna, 4088, Stavanger,
+            Norway
+          </p>
+          <p><span class="glyphicon glyphicon-phone"></span>+47 51 87 40 00</p>
+          <p>
+            <span class="glyphicon glyphicon-envelope"></span>
+            info@bitunitor.com
+          </p>
+        </div>
+        
+        <div class="col-sm-6 slideanim">
+          <div class="row">
+            <h2 class="text-center text-muted text-transform-none">CONTACT</h2>
+            <h2 class="text-center text-muted text-transform-none">PREPARE FOR THE DATA ECONOMY</h2>
+            <p class="text-center">
+              bitUnitor is still in development. Enter your email address below to
+              receive updates on our progress.
+            </p>
+          </div>
+          <div class="form-group">
+            <input
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Name"
+                  type="name"
+                  required
+                />
+              </div>
+          <div class="form-group">
+          <input
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Email"
+                type="email"
+                required
+              />
+            </div>
+          <textarea
+            class="form-control"
+            id="comments"
+            name="comments"
+            placeholder="Comment"
+            rows="5"
+            maxlength="5"
+            style="resize:none;"
+          ></textarea
+          ><br />
+          <div class="form-group form-check text-center">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1"> I confirm that I would like to be contacted by bitUnitor about their product</label>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-12 form-group text-center">
+              <button class="btn btn-default" type="submit">
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer style="background-color: black;" class="container-fluid text-center">
+      <a id="scroll-to-top-button" href="#myPage" title="To Top">
+        Top
+      </a>
+      <!--Facebook-->
+      <a href="https://www.facebook.com/bitYogaAS" class="fa fa-facebook"></a>
+       <!--Twitter-->
+<a href="https://twitter.com/bityogaas" class="fa fa-twitter"></a>
+ <!--LinkedIn-->
+<a href="https://www.linkedin.com/company/bityoga/" class="fa fa-linkedin"></a>
+      <p>
+        Copyright © 2020 bitUnitor
+      </p>
+    </footer>
+
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              900,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+
+        $(window).scroll(function () {
+          $(".slideanim").each(function () {
+            var pos = $(this).offset().top;
+
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 600) {
+              $(this).addClass("slide");
+            }
+          });
+        });
+
+        
+
+var slider1_news = tns({
+  container: ".news-tiny-carousel",
+  slideBy: "page",
+  speed: 400,
+  rewind: true,
+  mouseDrag: true,
+  autoplay: false,
+  controls: true,
+  preventScrollOnTouch: 'force',
+  controlsPosition:'top',
+  navPosition:'top',
+  arrowKeys:true,
+  responsive: {
+    320: {
+      items: 1,
+    },
+    500: {
+      items: 2,
+    },
+    900: {
+      items: 3       
+    }
+  },
+});
+
+
+var slider2_projects = tns({
+  container: ".project-tiny-carousel",
+  slideBy: "page",
+  speed: 400,
+  autoplay: false,
+  controls: true,
+  mouseDrag: true,
+  rewind: true,
+  preventScrollOnTouch: 'force',
+  controlsPosition:'top',
+  navPosition:'top',
+  responsive: {
+    320: {
+      items: 1,
+    },
+    500: {
+      items: 2,
+    },
+    900: {
+      items: 4            
+    }
+  },
+});
+
+
+
+
+
+      });
+    </script>
+    <script>
+      $('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});
+    </script>
+
+    <script>
+      var mymap = L.map("mapid").setView([59.888695, 5.718233], 6);
+
+      L.tileLayer(
+        "https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw",
+        {
+          maxZoom: 18,
+          attribution:
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+          id: "mapbox/streets-v11",
+          tileSize: 512,
+          zoomOffset: -1,
+        }
+      ).addTo(mymap);
+
+      L.marker([58.888695, 5.718233])
+        .addTo(mymap)
+        .bindPopup(
+          "<div class='text-center'><b>bitUnitor</b><br /><b>Fomo Works</b><br />B3 (Block-B,3rd Floor)<br />Grenseveien 21<br />4313 Sandnes<br />Norway</div>"
+        )
+        .openPopup();
+    </script>
+    <script>
+      //Get the button
+      var mybutton = document.getElementById("scroll-to-top-button");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      </script>
+  </body>
+</html>
