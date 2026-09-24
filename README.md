@@ -1,2 +1,1 @@
-# bitunitor / the startup page
-bitUnitor
+# bityoga-tmp-website
